@@ -2,7 +2,7 @@
 
 pkgname=wireguird
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 
 pkgdesc="Gtk gui client for Wireguard"
 arch=("x86_64")
@@ -12,7 +12,7 @@ categories=("network")
 options=(!strip)
 url=https://github.com/UnnoTed/wireguird
 
-depends=("wireguard-tools" "gtk3" "libappindicator-gtk3")
+depends=("wireguard-tools" "gtk3" "libappindicator-gtk3" "resolvconf")
 optdepends=()
 
 provides=(wireguird)
@@ -22,7 +22,7 @@ source=("${pkgname}-${pkgver}.deb::https://github.com/UnnoTed/wireguird/releases
 md5sums=("SKIP")
 
 prepare() {
-    tar -xf data.tar.xz
+    tar -xf data.tar.zst
     echo "Categories=Network" >> "./usr/share/applications/${pkgname}.desktop"
     echo "GenericName=Gtk gui client for Wireguard" >> "./usr/share/applications/${pkgname}.desktop"
 }

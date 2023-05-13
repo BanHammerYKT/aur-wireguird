@@ -1,13 +1,14 @@
 pkgbase = wireguird
 	pkgdesc = Gtk gui client for Wireguard
 	pkgver = 1.0.0
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/UnnoTed/wireguird
 	arch = x86_64
 	license = custom:wireguird
 	depends = wireguard-tools
 	depends = gtk3
 	depends = libappindicator-gtk3
+	depends = resolvconf
 	provides = wireguird
 	conflicts = wireguird
 	options = !strip

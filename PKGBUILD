@@ -18,7 +18,7 @@ optdepends=()
 provides=(wireguird)
 conflicts=(wireguird)
 
-source=("${pkgname}-${pkgver}.deb::https://github.com/UnnoTed/wireguird/releases/download/v1.0.0/wireguird_amd64.deb")
+source=("${pkgname}-${pkgver}.deb::https://github.com/UnnoTed/wireguird/releases/download/v${pkgver}/wireguird_amd64.deb")
 md5sums=("SKIP")
 
 prepare() {

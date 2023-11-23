@@ -1,8 +1,8 @@
 # Maintainer: BanHammer  <no@e.mail>
 
 pkgname=wireguird
-pkgver=1.0.0
-pkgrel=2
+pkgver=1.1.0
+pkgrel=1
 
 pkgdesc="Gtk gui client for Wireguard"
 arch=("x86_64")
